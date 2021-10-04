@@ -1,5 +1,7 @@
 # Responsive Travel Website
 
+Assets : https://unsplash.com/
+
 - Travel website to the most beautiful beaches, using HTML, CSS & JavaScript
 - Contains animations when scrolling
 - Includes a dark and light mode
