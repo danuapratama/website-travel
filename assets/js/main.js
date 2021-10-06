@@ -33,8 +33,8 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 function scrollHeader(){
     const header = document.getElementById('header')
-    // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
-    if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+    // When the scroll is greater than 20 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 20) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
 
@@ -47,7 +47,11 @@ let swiper = new Swiper(".discover__container", {
     loop: true,
     spaceBetween: 32,
     coverflowEffect: {
-        rotate: 0,
+        rotate: 20,
+        stretch: 0,        
+        depth: 100,        
+        modifier: 1,        
+        slideShadows: true,   
     },
 })
 
@@ -115,7 +119,7 @@ window.addEventListener('scroll', scrollActive)
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
     distance: '60px',
-    duration: 2800,
+    duration: 1500,
     // reset: true,
 })
 
